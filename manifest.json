@@ -1,0 +1,43 @@
+{
+  "version": "0.0.1",
+  "name": "Linux Do Plus",
+  "manifest_version": 3,
+  "description": "__MSG_pluginDesc__",
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "icons": {
+    "48": "images/48.png",
+    "96": "images/96.png",
+    "128": "images/128.png"
+  },
+  "permissions": [
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "sandbox": "sandbox allow-scripts; script-src 'self' https://hm.baidu.com 'unsafe-eval' https://hmcdn.baidu.com; object-src 'self'"
+  },
+  "action": {
+    "default_icon": "images/96.png",
+    "default_title": "Linux Do Plus",
+    "default_popup": ""
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://linux.do/t/topic/*"
+      ],
+      "js": [
+        "js/contentScript.js"
+      ],
+      "css": [],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+  ],
+  "homepage_url": "https://github.com/scoful/linuxDoPlus",
+  "default_locale": "zh_CN"
+}
