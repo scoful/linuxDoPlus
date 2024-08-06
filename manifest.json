@@ -27,7 +27,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://linux.do/t/topic/*"
+        "https://*.linux.do/*",
+        "https://*.linuxdo.org/*"
       ],
       "js": [
         "js/contentScript.js"
@@ -37,6 +38,14 @@
     }
   ],
   "web_accessible_resources": [
+    {
+      "resources": [
+        "css/air.css"
+      ],
+      "matches": [
+        "https://linux.do/*"
+      ]
+    }
   ],
   "homepage_url": "https://github.com/scoful/linuxDoPlus",
   "default_locale": "zh_CN"
