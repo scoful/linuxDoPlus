@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Do Plus</title>
+    <script src="js/popup.js"></script>
+    <style>
+        body {
+            background-color: #f7fafc;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 420px;
+        }
+
+        .nav {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #555;
+            margin: 0 10px;
+            border-right: 1px solid #ddd;
+            text-align: center; /* 使文字居中 */
+        }
+
+        .nav a:last-child {
+            border-right: none;
+        }
+
+        .nav a:hover {
+            color: #0073e6;
+        }
+
+        .nav a.active {
+            color: #0073e6;
+            font-weight: bold;
+        }
+
+        .nav a i {
+            margin-right: 5px;
+            font-size: 1.2em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .text-green-500 {
+            color: #28a745;
+        }
+
+        .text-red-500 {
+            color: #dc3545;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <a href="#" id="viewUpdates" class="active">🚀查看升级信息🚀</a>
+    <a href="#" id="supportMe">❤️请我喝瑞幸~🙏</a>
+</nav>
+<div class="container" id="container">✊努力获取升级信息ing~✊</div>
+</body>
+</html>

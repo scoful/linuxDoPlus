@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "Linux Do Plus",
   "manifest_version": 3,
   "description": "__MSG_pluginDesc__",
@@ -22,7 +22,7 @@
   "action": {
     "default_icon": "images/96.png",
     "default_title": "Linux Do Plus",
-    "default_popup": ""
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {
@@ -43,7 +43,8 @@
         "css/air.css"
       ],
       "matches": [
-        "https://linux.do/*"
+        "https://linux.do/*",
+        "https://linuxdo.org/*"
       ]
     }
   ],
